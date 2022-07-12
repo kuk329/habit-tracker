@@ -12,7 +12,6 @@ class App extends Component {
         {id:2, name:'Running',count:0},
         {id:3, name:'Coding',count:0},
     ],
-    countAll:0,
 };
 
 handleCreate=(habit)=>{ // 새로운 객체 추가
@@ -41,8 +40,7 @@ handleDecrement=(habit)=>{
 handleDelete=(habit)=>{
   const habits = this.state.habits.filter(item=> item.id!==habit.id);
 
-  const size = habits.length; 
-  this.setState({habits:habits,countAll :size});
+  this.setState({habits});
   
 };
 
