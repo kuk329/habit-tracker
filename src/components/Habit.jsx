@@ -2,6 +2,16 @@ import React, { Component } from 'react';
 
 class Habit extends Component {
 
+    componentDidMount(){ /*component 가 사용자에게 보여질때 호출 */
+        console.log(`habit: ${this.props.habit.name} mounted`);
+    }
+
+    componentWillUnmount(){ /* component 삭제 전에 호출 */
+        console.log(`habit: ${this.props.habit.name} will unmount`);
+
+    }
+
+
     handleIncrement = ()=>{
         this.props.onIncrement(this.props.habit);
     };

@@ -14,10 +14,6 @@ class App extends Component {
     ],
 };
 
-handleCreate=(habit)=>{ // 새로운 객체 추가
-
-  // countAll 갯수 증가
-}
 
 
 handleIncrement = (habit)=>{
@@ -66,7 +62,6 @@ handleReset = ()=>{
       onDecrement={this.handleDecrement} onDelete={this.handleDelete}
       onAdd={this.handleAdd}
       onReset={this.handleReset}/>
-        
       </>
     );
   }
